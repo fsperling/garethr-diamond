@@ -37,7 +37,7 @@ class diamond::install {
     }
   package {'diamond':
     ensure   => present,
-    provider => pip,
+    provider => yuavpip,
   }
   if $::osfamily == 'Solaris' {
     # This should eventually go upstream
